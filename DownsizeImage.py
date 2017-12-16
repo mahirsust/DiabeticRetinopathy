@@ -5,11 +5,11 @@ import sys
 def readf():
     try:
         #input_dir  = str(sys.argv[1].rstrip('/'))  #path to img source folder
-        input_dir = str('H:/xampp/htdocs/Diabetic_Retinopathy/images'.rstrip('/'))
+        input_dir = str('H:/xampp/htdocs/DiabeticRetinopathy/Data_images'.rstrip('/'))
         #img_size   = str(sys.argv[2])  #The image size (128, 256,etc)
         img_size = str(256)
         #output_dir  = str(sys.argv[3].rstrip('/')) #output directory
-        output_dir = str('H:/xampp/htdocs/Diabetic_Retinopathy/new_images'.rstrip('/'))
+        output_dir = str('H:/xampp/htdocs/DiabeticRetinopathy/new_images'.rstrip('/'))
         print ("starting....")
         print ("Colecting data from %s " % input_dir)
         tclass = [ d for d in os.listdir( input_dir ) ]
@@ -28,8 +28,8 @@ def readf():
                        img = img.resize((int(img_size),int(img_size)),Image.ANTIALIAS)
                        fname,extension = os.path.splitext(d)
                        newfile = fname+extension
-                       if extension != ".jpg" :
-                           newfile = fname + ".jpg"
+                       if extension != ".jpeg" :
+                           newfile = fname + ".jpeg"
                        img.save(os.path.join(output_dir+'/'+x,newfile),"JPEG",quality=90)
                        print ("Resizing file : %s - %s " % (x,d))
                    except Exception as e:

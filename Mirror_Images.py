@@ -15,5 +15,5 @@ def flip_image(image_path, saved_location):
     print("Succeeded Mirroring Image %s " % image_path)
 
 if __name__ == '__main__':
-    image = 'H:/Python_Soft/Diabetic_Retinopathy/new_images/img/1_img.jpg'
-    flip_image(image, 'H:/Python_Soft/Diabetic_Retinopathy/MirrorImages/1_m_img.jpg')
+    image = 'H:/xampp/htdocs/DiabeticRetinopathy/new_images/img/11_left.jpeg'
+    flip_image(image, 'H:/xampp/htdocs/DiabeticRetinopathy/MirrorImages/11_m_left.jpeg')

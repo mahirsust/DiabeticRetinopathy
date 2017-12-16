@@ -17,7 +17,7 @@ def rotate(image_path, degrees_to_rotate, saved_location):
     print("Succeeded Rotating 270° Image %s " % image_path)
 
 if __name__ == '__main__':
-    image = 'H:/Python_Soft/Diabetic_Retinopathy/new_images/img/1_img.jpg'
-    image_mirror = 'H:/Python_Soft/Diabetic_Retinopathy/MirrorImages/1_m_img.jpg'
-    rotate(image, 270, 'H:/Python_Soft/Diabetic_Retinopathy/rot270/1_img_270.jpg')
-    rotate(image_mirror, 270, 'H:/Python_Soft/Diabetic_Retinopathy/m_rot270/1_m_img_270.jpg')
+    image = 'H:/xampp/htdocs/DiabeticRetinopathy/new_images/img/11_left.jpeg'
+    image_mirror = 'H:/xampp/htdocs/DiabeticRetinopathy/MirrorImages/11_m_left.jpeg'
+    rotate(image, 270, 'H:/xampp/htdocs/DiabeticRetinopathy/rot270/11_left_270.jpeg')
+    rotate(image_mirror, 270, 'H:/xampp/htdocs/DiabeticRetinopathy/m_rot270/11_m_left_270.jpeg')
